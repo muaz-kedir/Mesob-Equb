@@ -37,7 +37,7 @@ const Testimonials = () => {
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
             Trusted by{" "}
-            <span className="text-gradient-gold">Thousands</span>
+            <span className="text-gradient-teal">Thousands</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Hear what our members have to say about their experience with Mesob Equb.
@@ -52,7 +52,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12 }}
-              className="bg-background rounded-2xl p-8 shadow-card border border-border hover:shadow-gold transition-all duration-300 hover:-translate-y-1"
+              className="bg-background rounded-2xl p-8 shadow-card border border-border hover:shadow-teal transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex gap-1 mb-5">
                 {[...Array(5)].map((_, j) => (

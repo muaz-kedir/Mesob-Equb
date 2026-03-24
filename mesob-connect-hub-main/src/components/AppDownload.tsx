@@ -29,7 +29,7 @@ const AppDownload = () => {
             </span>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
               Your Equb,{" "}
-              <span className="text-gradient-gold">In Your Pocket</span>
+              <span className="text-gradient-teal">In Your Pocket</span>
             </h2>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed max-w-lg">
               Download the Mesob Equb app and manage your savings groups anytime, anywhere.
@@ -39,7 +39,7 @@ const AppDownload = () => {
             <ul className="mt-8 space-y-3">
               {features.map((f) => (
                 <li key={f} className="flex items-start gap-3">
-                  <span className="mt-0.5 w-5 h-5 rounded-full bg-gradient-gold flex items-center justify-center shrink-0">
+                  <span className="mt-0.5 w-5 h-5 rounded-full bg-gradient-teal flex items-center justify-center shrink-0">
                     <Check className="h-3 w-3 text-primary-foreground" />
                   </span>
                   <span className="text-muted-foreground text-sm">{f}</span>
@@ -71,7 +71,7 @@ const AppDownload = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="absolute -inset-8 bg-gradient-gold opacity-10 rounded-[3rem] blur-2xl" />
+              <div className="absolute -inset-8 bg-gradient-teal opacity-10 rounded-[3rem] blur-2xl" />
               <img
                 src={appMockup}
                 alt="Mesob Equb Mobile App"
