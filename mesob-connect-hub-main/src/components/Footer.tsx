@@ -1,4 +1,5 @@
-import mesobIcon from "@/assets/mesob-equb-logo.png";
+import React from "react";
+import mesobIcon from "@/assets/mosob-logo.png";
 
 const Footer = () => {
   return (

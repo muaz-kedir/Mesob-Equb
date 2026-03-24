@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import mesobIcon from "@/assets/mesob-equb-logo.png";
+import mesobIcon from "@/assets/mosob-logo.png";
 // import mesobIcon from  "@/assets/image.png";
 
 const navLinks = [
