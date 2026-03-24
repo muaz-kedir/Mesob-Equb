@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd mesob-connect-hub-main && npm run build",
+  "outputDirectory": "mesob-connect-hub-main/dist",
+  "installCommand": "cd mesob-connect-hub-main && npm ci"
+}
