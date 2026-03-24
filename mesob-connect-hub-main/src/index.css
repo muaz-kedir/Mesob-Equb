@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Righteous&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light blue/gray background for main sections */
+    --background: 210 25% 98%;
+    --foreground: 210 50% 15%;
+
+    /* Card backgrounds with subtle blue tint */
+    --card: 210 20% 96%;
+    --card-foreground: 210 50% 15%;
+
+    --popover: 210 25% 98%;
+    --popover-foreground: 210 50% 15%;
+
+    /* Teal/emerald primary color matching the reference */
+    --primary: 174 72% 56%;
+    --primary-foreground: 210 25% 98%;
+
+    /* Dark navy blue for secondary elements */
+    --secondary: 210 50% 15%;
+    --secondary-foreground: 210 25% 98%;
+
+    /* Muted colors with blue undertones */
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 25% 45%;
+
+    /* Teal accent color */
+    --accent: 174 72% 56%;
+    --accent-foreground: 210 25% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders with subtle blue tint */
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 174 72% 56%;
+
+    --radius: 0.75rem;
+
+    /* Updated color palette to match fintech theme */
+    --navy: 210 50% 15%;
+    --navy-light: 210 40% 25%;
+    --navy-lighter: 210 30% 40%;
+    --navy-dark: 210 60% 8%;
+    --teal: 174 72% 56%;
+    --teal-light: 174 60% 70%;
+    --teal-dark: 174 80% 45%;
+    --blue-light: 210 25% 98%;
+    --blue-muted: 210 20% 96%;
+    --gray-blue: 210 15% 92%;
+    --text-dark: 210 50% 15%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-script: 'Dancing Script', cursive;
+    --font-righteous: 'Righteous', cursive;
+
+    /* Updated gradients for fintech theme */
+    --gradient-teal: linear-gradient(135deg, hsl(174, 72%, 56%), hsl(174, 60%, 70%));
+    --gradient-navy: linear-gradient(135deg, hsl(210, 50%, 15%), hsl(210, 60%, 8%));
+    --gradient-light: linear-gradient(180deg, hsl(210, 25%, 98%), hsl(210, 20%, 96%));
+    --shadow-teal: 0 8px 32px -8px hsl(174 72% 56% / 0.25);
+    --shadow-card: 0 4px 24px -4px hsl(210 50% 15% / 0.08);
+    --shadow-soft: 0 2px 16px -2px hsl(210 25% 45% / 0.1);
+
+    --sidebar-background: 210 25% 98%;
+    --sidebar-foreground: 210 50% 15%;
+    --sidebar-primary: 174 72% 56%;
+    --sidebar-primary-foreground: 210 25% 98%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 210 50% 15%;
+    --sidebar-border: 210 20% 88%;
+    --sidebar-ring: 174 72% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-teal {
+    background: var(--gradient-teal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-gradient-teal {
+    background: var(--gradient-teal);
+  }
+  .bg-gradient-navy {
+    background: var(--gradient-navy);
+  }
+  .bg-gradient-light {
+    background: var(--gradient-light);
+  }
+  .shadow-teal {
+    box-shadow: var(--shadow-teal);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  /* Fintech-specific utility classes */
+  .bg-navy {
+    background-color: hsl(var(--navy));
+  }
+  .bg-navy-light {
+    background-color: hsl(var(--navy-light));
+  }
+  .bg-navy-lighter {
+    background-color: hsl(var(--navy-lighter));
+  }
+  .bg-navy-dark {
+    background-color: hsl(var(--navy-dark));
+  }
+  .bg-teal {
+    background-color: hsl(var(--teal));
+  }
+  .bg-teal-light {
+    background-color: hsl(var(--teal-light));
+  }
+  .bg-blue-light {
+    background-color: hsl(var(--blue-light));
+  }
+  .bg-blue-muted {
+    background-color: hsl(var(--blue-muted));
+  }
+  .text-navy {
+    color: hsl(var(--navy));
+  }
+  .text-teal {
+    color: hsl(var(--teal));
+  }
+  .text-blue-light {
+    color: hsl(var(--blue-light));
+  }
+  
+  /* Font families */
+  .font-script {
+    font-family: var(--font-script);
+  }
+  .font-righteous {
+    font-family: var(--font-righteous);
+  }
+}
