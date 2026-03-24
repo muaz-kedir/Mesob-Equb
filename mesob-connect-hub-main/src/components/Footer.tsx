@@ -1,4 +1,4 @@
-import mesobIcon from "@/assets/mosob-logo.png";
+import mesobIcon from "@/assets/mesob-equb-logo.png";
 
 const Footer = () => {
   return (
